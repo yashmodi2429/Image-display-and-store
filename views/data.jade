@@ -1,0 +1,18 @@
+html
+   head
+      style(type='text/css').
+         .img-width {
+            height:20%;
+            border-width:5px;
+            border-style:groove;
+         }
+         .setting {
+            display: inline;
+         }
+body
+   each img in images
+      div.setting
+         img.img-width(src="data:image/png;base64,#{img.url}", alt="img from base64")
+            
+            
+             
